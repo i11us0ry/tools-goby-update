@@ -1,0 +1,38 @@
+{
+ "name": "UpdateConfig",
+ "publisher": "goby牛逼",
+ "description": "更新goby配置信息！",
+ "version": "0.2.1",
+ "engines": "1.8.230",
+ "initEvents": "",
+ "icon": "src/assets/img/update.ico",
+ "main": "./src/extension.js",
+ "contributes": {
+    "views": {
+    	"toolbar": [
+          {
+            "command": "UpdateConfig",
+            "title": "UpdateConfig",
+            "icon": "src/assets/img/update.ico"
+          }
+        ]
+    },
+    "configuration":{
+      "src_config":{
+        "type":"string",
+        "default":"",
+        "description":"src_dir",
+        "fromDialog": true
+      },
+      "dst_config":{
+        "type":"string",
+        "default":"",
+        "description":"dsr_dir",
+        "fromDialog": true
+      }
+    }
+ },
+ "scripts": {},
+ "devDependencies": {},
+ "dependencies": {}
+}

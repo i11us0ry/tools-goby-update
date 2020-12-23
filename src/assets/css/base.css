@@ -1,0 +1,62 @@
+/* 滚动条轨道的样式 */
+::-webkit-scrollbar {
+  width: 5px;
+  /*竖向滚动条的宽度*/
+  height: 5px;
+  /*横向滚动条的高度*/
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+/* 滚动条轨道内滑块的样式 */
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: #A0B0CD;
+}
+
+/* 当焦点不在当前区域滑块的状态 */
+::-webkit-scrollbar-thumb:window-inactive {
+  background-color: #FFFFFF;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  /*清除浮动*/
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/
+}
+
+.tips{
+  color: #de1c31;
+  font-size: 14px;
+}
+
+.layui-btn {
+  width: 90px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  border-radius: 10px;
+  margin-left: 200px;
+  margin-top: 8px;
+}
+
+.layui-icon-ok:before {
+  position: relative;
+  top: -1px;
+}
